@@ -1,0 +1,64 @@
+body {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+article {
+    padding: 20px 40px 0px 40px; 
+    font-family: 'Jost', sans-serif;
+    margin: 30px;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+span {
+    color: rgb(221, 67, 93);
+    font-size: 1.2rem;
+}
+
+.reparto {
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin:0 auto
+ 
+}
+
+.reparto th, td {
+    padding: 10px;
+    border: black 2px solid;
+    font-family: 'Jost', sans-serif;
+    background-image: linear-gradient(to right top, #74b5be, #62aebe, #4fa8bf, #3ba0c1, #2399c2);
+}
+
+#extra1 {
+    padding-bottom: 10px;
+}
+
+li {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin: 0 50px 20px 50px ;
+}
+
+.list-1 {
+    margin-left: 30px;
+    list-style-image: url("./img/book.png");
+}
+
+.list-2 {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#but {
+    text-align: center;
+    margin-left: 3vh;
+    padding-bottom: 3em;
+}
+
+.fy {
+    padding-top: 30px;
+}
+
+.fy p {
+    color: black;
+}

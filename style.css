@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1500px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    nav {
+        display: flex;
+        font-size: 1em;
+        margin-right: 30px;
+        padding: 30px 0 10px 0;
+    }
+
+    .logo img {
+        padding: 10px 0 10px 0;
+    }
+
+    .logo h1 {
+        text-align: center;
+        font-size: .2em;
+    }
+
+   .portada img {
+        width: 100%;
+        height: 35vh;
+
+    }
+    main h2 {
+        font-size: 2em;
+    }
+
+    .estrenos {
+        flex-direction: column;
+    }
+
+  
+}
+
+@media only screen and (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        flex-direction: column;
+        font-size: .6em;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        font-size: .8em;
+        padding: 30px 0 10px 0;
+    }
+
+    .logo img {
+        padding: 10px 0 10px 0;
+    }
+
+   .portada img {
+        width: 100%;
+        height: 35vh;
+    } 
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    .vistos-grid {
+        display: grid;
+        justify-content:center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        flex-direction: column;
+        font-size: .7em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: .8em;
+        padding: 30px 0 10px 0;
+    }
+    
+}
+
+header {
+    display: flex;
+    min-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #74b5be, #62aebe, #4fa8bf, #3ba0c1, #2399c2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 2.3em;
+    color: #f1f1f1;
+}
+
+.logo img {
+    margin-right: 10px;
+    height: 70px;
+}
+
+nav a {
+    color: #004B5D;
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav a:hover {
+    color: #f1f1f1;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin: 30px 0 30px 0px;
+    font-size: 2.5em;
+    font-family: 'Righteous', cursive;
+    color: #004B5D;
+}
+
+h2:hover {
+    text-shadow: pink -3px 0, cyan 5px 0;
+}
+
+.estrenos {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 1em;
+    background-image: linear-gradient(to right top, #74b5be, #62aebe, #4fa8bf, #3ba0c1, #2399c2);
+}
+
+.estrenos img {
+    margin-left: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.estrenos img:hover {
+    transform: scale(1.2);
+}
+
+.estrenos h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    margin-left: 10px ;
+}
+
+.estrenos blockquote {
+    margin: 50px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.ost {
+    text-align: center;
+    margin: 30px 0px 60px 0;
+    font-size: 1.2em;
+}
+
+.ost p {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    color: #2399c2;
+}
+
+hr {
+    color: #2399c2;
+}
+
+.vistos-grid {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    padding: 50px 0px 50px 25px;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.serie img {
+    height: 200px;
+    width: 150px;
+}
+
+.serie img:hover {
+    border: #004B5D 3px double;
+}
+
+#proximos {
+    padding: 30px 30px 30px 30px;
+    font-family: 'Jost', sans-serif;
+    background-image: linear-gradient(to right top, #d463a8, #e16c9a, #e9788e, #ec8686, #eb9583, #eb997e, #eb9d79, #e9a175, #ea9c68, #ea985b, #ea944d, #e9903e);
+}
+
+#proximos p {
+    font-size: 18px;   
+}
+
+.list {
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 20px 0 25px 0;
+}
+
+.list li {
+    padding-bottom: 10px;
+}
+
+span {
+    color: #004B5D;
+    font-size: 1.2rem;
+}
+
+#proximo1 h3 {
+    font-size: 20px;
+    color: #004B5D;
+}
+
+#proximo1 {
+    padding-bottom: 35px;
+}
+
+aside {
+    margin: 20px;
+    padding: 30px;
+    background-image: linear-gradient(to right top, #74b5be, #62aebe, #4fa8bf, #3ba0c1, #2399c2);
+}
+
+form h3{
+    padding: 10px 0 30px 0px;
+}
+
+form {
+    font-family: 'Jost', sans-serif;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: #004B5D;
+}
+
+button:hover {
+    background-color: rgb(221, 67, 93);
+}
+
+footer {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer p {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    color: #8F84A0;
+}
+
+.ig {
+    text-decoration: none;
+    color: blueviolet;
+}
